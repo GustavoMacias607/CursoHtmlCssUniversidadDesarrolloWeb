@@ -1,8 +1,19 @@
 h1{
-    color:blue;
-
+    color: #000000;
+    text-align: center;
 }
 p{
-    color: white;
-    background-color: black;
+    color: #000000;
+    background-color : #edf2f4;
+    padding: 10px;
+    border: 15px solid #14213d;
+    /*
+    margin-top: 40px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+*/
+margin: auto 50px;
+text-align: center;
+
 }
