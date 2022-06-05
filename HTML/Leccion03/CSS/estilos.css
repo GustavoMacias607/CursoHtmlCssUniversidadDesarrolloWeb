@@ -1,20 +1,16 @@
 h1{
-    color: #283618;
+  color:aquamarine;  
+}
+a:link,a:visited{
+    background-color: #d62828;
+    color: white;
+    padding: 15px 25px;
+    text-align: center;
+    text-decoration: none;
+display: inline-block;
 }
 
-a:link{
-    color: #2a9d8f;
-    text-decoration: none;
-}
-a:visited{
-    color: #e9c46a;
-    text-decoration: none;
+a:hover,a:active{
+    background-color: #f77f00;
 }
 
-a:hover{
-    color: #f15bb5;
-    text-decoration: underline;
-}
-a:active{
-    color: #000;
-}
