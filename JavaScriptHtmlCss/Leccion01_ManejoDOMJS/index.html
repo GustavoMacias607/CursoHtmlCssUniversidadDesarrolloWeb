@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Manejo DOM con JS</title>
+
+</head>
+
+<body>
+
+    <h1 id="titulo">Manejo DOM con JS</h1>
+    <br>
+    <form id="forma">
+        Nombre: <input type="text" id="nombre" />
+        <br><br>
+        Apellido: <input type="text" id="apellido" />
+
+    </form>
+
+
+
+    <script>
+        const forma = document.getElementById("forma");
+
+        forma.addEventListener("focus", (evento) => {
+            evento.target.style.background = "pink";
+        },true);//EL TRUE ES PARA QUE TOME EN CUENTA EL VALOR QUE SE LE ESTA DANDO
+        forma.addEventListener("blur", (evento) => {
+            evento.target.style.background = "white";
+        },true);
+
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- USO DE FUNCIONES PARA CAMBIAR EL COLOR EL COLOR DE LOS INPUT AL DARLE CLICK DE FORMA INDIVIDUAL
+
+    <h1 id="titulo">Manejo DOM con JS</h1>
+    <br>
+    Nombre: <input type="text" id = "nombre" />
+    <br><br>
+    Apellido: <input type="text" id = "apellido" />
+    <script>
+        document.getElementById("nombre").addEventListener("focus", (evento) => {
+            evento.target.style.background = "pink";
+        });
+        document.getElementById("nombre").addEventListener("blur", (evento) => {
+            evento.target.style.background = "white";
+        });
+
+        document.getElementById("apellido").addEventListener("focus", cambiar);
+        document.getElementById("apellido").addEventListener("blur", regresar);
+        function cambiar(evento) {
+            let componente = evento.target;
+            componente.style.backgroundColor = "yellow";
+        }
+        function regresar(evento) {
+            evento.target.style.backgroundColor = "white";
+        }
+
+    </script> -->
+
+
+
+
+
+
+
+
+    <!-- 
+    USO DE FORMULARIOS Y SOBRE IMPRIMIR EN UN DIV LOS DATOS PUESTOS EN EL FORMULARIO AL PRESIONAR EL BOTON
+
+   <form id = "formulario">
+        Nombre: <input type = "text" name="nombre" value="juan"/>
+        <br>
+        Apellido: <input type = "text" name="apellido" value = "perez"/>
+        <br>
+   </form>
+   <button onclick = "mostrarValores()">Mostrar</button>
+   <div id = "valores"></div>
+   <script>
+    function mostrarValores(){
+        let formulario = document.forms["formulario"];
+        let texto = "";
+        let nombre = formulario["nombre"];
+        console.log(nombre);
+        let apellido = formulario["apellido"];
+        texto = nombre.value + "<br>" + apellido.value; 
+        document.getElementById("valores").innerHTML = texto;
+    }
+   </script> -->
+</body>
+
+</html>
