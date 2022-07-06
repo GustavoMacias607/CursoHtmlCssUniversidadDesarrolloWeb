@@ -1,0 +1,14 @@
+h1{
+    text-align: center;
+
+}
+div{
+    text-align: center;
+    padding:10px;
+}
+
+.mostrar{
+    margin: auto 300px;
+    border: 2px solid black;
+    background: cornsilk;
+}
